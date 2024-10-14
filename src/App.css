@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-rows: repeat(15, 20px); /* 15 rows */
+    grid-template-columns: repeat(20, 20px); /* 20 columns */
+    gap: 0; /* No gap between cells */
+  }
+  
+  .row {
+    display: contents; /* Use contents to treat children as direct grid items */
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Default to transparent */
+    transition: background-color 0.1s; /* Smooth transition for color change */
+  }
+  
